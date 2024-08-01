@@ -1,0 +1,65 @@
+:root{
+  --body-color: rgb(232, 229, 229);
+  --sidebar-color: white;
+  --mainhead-color: linear-gradient(45deg,
+    #048622 20%,
+    #92D050 100%);;
+  --text-color: #048622;
+  --hover-color: #92D050;
+  --button-color: #0c501c;
+  --border-color: black;
+  --pnameshadow-color: rgb(89, 89, 89);
+}
+body.theme {
+  --body-color: rgb(0, 0, 0);
+  --sidebar-color: rgb(0, 0, 0);
+  --mainhead-color: linear-gradient(45deg,
+  rgb(183, 0, 255) 20%,
+  rgb(255,0,170)100%);;
+  --text-color: #63fff7;
+  --hover-color: linear-gradient(45deg,
+  rgb(183, 0, 255) 20%,
+  rgb(255,0,170)100%);;
+  --button-color: black;
+  --border-color: rgb(255, 255, 255);
+  --pnameshadow-color: #63fff7;
+}
+.container{
+    height: 520px;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.116);
+    border-color: var(--border-color);
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 50px;
+    margin-left: 505px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-width: 5px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow:5px 5px 17px var(--pnameshadow-color);
+  }
+  .pname{
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    background: var(--mainhead-color);
+    padding: 20px 15px;
+    border-radius: 7px;
+    color: white;
+    gap: 20px;
+    box-shadow:5px 5px 17px var(--pnameshadow-color);
+  }
+  .pname i {
+    margin-right: 10px;
+  }
+  .pname:hover{
+    box-shadow:5px 5px 1px var(--pnameshadow-color);
+  }
+  
